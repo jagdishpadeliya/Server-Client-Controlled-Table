@@ -1,0 +1,64 @@
+{
+  "name": "shadcn-table",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "postinstall": "prisma generate",
+    "lint": "next lint",
+    "start": "next start",
+    "db:seed": "prisma db seed",
+    "db:push": "prisma db push"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "@next-auth/prisma-adapter": "^1.0.5",
+    "@prisma/client": "^4.14.0",
+    "@t3-oss/env-nextjs": "^0.3.1",
+    "@tanstack/react-query": "^4.29.7",
+    "@trpc/client": "^10.26.0",
+    "@trpc/next": "^10.26.0",
+    "@trpc/react-query": "^10.26.0",
+    "@trpc/server": "^10.26.0",
+    "class-variance-authority": "^0.6.1",
+    "clsx": "^1.2.1",
+    "lucide-react": "^0.260.0",
+    "next": "^13.4.2",
+    "next-auth": "^4.22.1",
+    "next-themes": "^0.2.1",
+    "radix-ui": "^1.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "superjson": "1.12.2",
+    "tailwind-merge": "^1.13.2",
+    "tailwindcss-animate": "^1.0.6",
+    "unstyled-table": "^0.0.3-alpha-3",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.37.0",
+    "@types/node": "^18.16.19",
+    "@types/prettier": "^2.7.2",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "^13.4.2",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "prisma": "^4.14.0",
+    "tailwindcss": "^3.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.15.0"
+  }
+}
