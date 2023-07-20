@@ -399,15 +399,15 @@ export function ServerControlledTable({
               {data.length
                 ? children
                 : !isPending && (
-                    <TableRow>
-                      <TableCell
-                        colSpan={columns.length}
-                        className="h-24 text-center"
-                      >
-                        No results.
-                      </TableCell>
-                    </TableRow>
-                  )}
+                  <TableRow>
+                    <TableCell
+                      colSpan={columns.length}
+                      className="h-24 text-center"
+                    >
+                      No results.
+                    </TableCell>
+                  </TableRow>
+                )}
             </TableBody>
           ),
           bodyRow: ({ children }) => <TableRow>{children}</TableRow>,
@@ -416,7 +416,7 @@ export function ServerControlledTable({
               {isPending ? <Skeleton className="h-6 w-20" /> : children}
             </TableCell>
           ),
-          filterInput: ({}) => null,
+          filterInput: ({ }) => null,
           // Custom pagination bar
           paginationBar: ({ tableInstance }) => {
             return (
